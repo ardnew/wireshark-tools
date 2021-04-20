@@ -3,7 +3,7 @@
 
 ## Scripts
 
-### [`run.sh`](run.sh) — Configure local environment temporarily and run a Wireshark tool.
+ - [`run.sh`](run.sh) — **Configure local environment temporarily and run a Wireshark tool.**
 
 This script must be installed in the Wireshark build subdirectory `run`, where all of the tools are placed when building the project from source.
 
