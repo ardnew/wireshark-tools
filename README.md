@@ -1,5 +1,5 @@
 # wireshark-tools
-### Wireshark [scripts](README.md#Scripts), [rules](README.md#Rules), and [filters](README.md#Filters)
+### Wireshark [scripts](README.md#scripts), [rules](README.md#rules), and [filters](README.md#filters)
 
 ## Scripts
 
@@ -31,9 +31,9 @@ To install symlinks for ALL tools using these same paths:
 ```sh
 # find all executables, placing symlinks to "run.sh" in global $PATH
 find /usr/local/lib/wireshark -type f -executable \
-\! \( -name "*.so*" -or -name run.sh \) -print0 |
-xargs -0 -L 1 basename | xargs -L 1 -I{} \
-ln -s /usr/local/lib/wireshark/run.sh ~/.local/bin/wireshark/{}
+    \! \( -name "*.so*" -or -name run.sh \) -print0 |
+        xargs -0 -L 1 basename | xargs -L 1 -I{} \
+            ln -s /usr/local/lib/wireshark/run.sh ~/.local/bin/wireshark/{}
 ```
 
 ## Rules
